@@ -185,23 +185,23 @@ contract Ownable {
 }
 
 /**
- * @title BUZZToken
+ * @title DEEMToken
  * @dev Very simple ERC20 Token example, where all tokens are pre-assigned to the creator.
  * Note they can later distribute these tokens as they wish using `transfer` and other
  * `StandardToken` functions.
  */
-contract BUZZToken is StandardToken, Ownable {
+contract DEEMToken is StandardToken, Ownable {
 
-  string public constant name = "BUZZ Token";
-  string public constant symbol = "BUZZ";
+  string public constant name = "REDEEM Token";
+  string public constant symbol = "DEEM";
   uint256 public constant decimals = 18;
 
-  uint256 public constant INITIAL_SUPPLY = 225000000 * 10**18;
+  uint256 public constant INITIAL_SUPPLY = 100000000 * 10**18;
 
   /**
    * @dev Contructor that gives msg.sender all of existing tokens.
    */
-  function BUZZToken() {
+  function DEEMToken() {
     totalSupply = INITIAL_SUPPLY;
     balances[msg.sender] = INITIAL_SUPPLY;
   }
