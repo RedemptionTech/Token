@@ -1,2 +1,2 @@
 # Token
-Code For Creation of The BUZZ Token on Ethereum
+Code For Creation of The DEEM Token on Ethereum
